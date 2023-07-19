@@ -144,52 +144,7 @@ toggle.addEventListener("click", function () {
   }
 });
 
-let counts =setInterval(updated);
-let upto = 0;
-let speed = 100;
-function updated() {
-  let count = document.getElementsByClassName('.counter');
-  count.innerHTML = ++upto;
-  if(upto === 356) {
-    clearInterval(counts);
-  }}
 
-// }
-// a = prompt('1240') ;
-// for(let counter=0; counter<=a; counter
-// +=1)
-// let upto =0;
-// let counter =document.querySelectorAll('.counter');
-// counter.forEach(() =>{
-//   counter.innerHTML = ++ upto
-// })
-
-
-// const counters = document.querySelectorAll('.count');
-// const speed = 200;
-// counters.forEach((widget-item) => {
-//   const updateCount = () => {
-//     const target = parseInt(+widget-item . getAttribute('data-target'));
-//     const count = parseInt(+widget-item.innerText);
-//     const increment = Math.trunc(target / speed);
-//     if(   count < target ){
-//       widget-item.innerText = count + increment;
-//       setTimeout(updateCount, 1);
-//     }else{
-//       count.innerText = target;
-//     }
-
-//   };
-//   updateCount();
-// });
-
-// let upto = 0;
-// let counter = document.getElementById('counter');
-// for( let upto =0; upto <= target-value;   upto++){
-// console.log(counter)
-// }
-// const counter = document.getElementById('counter');
-// for( let i = 0; i > 0; i++)
 
 
 
