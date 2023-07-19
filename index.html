@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- darkmode -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- animatecss -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Term-Project</title>
+  </head>
+  <body  >
+    <!-- <button onclick="topFunction()" id="mybtn" title="Go to the top" >Top</button> -->
+    <div class="hero" id="hero" >
+  <header class="header header-scroll  " id="header">
+        <a targrt="self" href="#">Portfolio.</a>
+        <!-- //humburger-menu// -->
+        <input type="checkbox" id="toggle-button"/>
+        <label for="toggle-button" class="toggle-button-label toggleDark">
+          <span></span>
+        </label> 
+        <nav Class="navigation">
+          <ul class="list">
+            <li ><a class=" active"  href="#home">home</a></li>
+            <li><a class="about" href="#about"  >about</a></li>
+            <li><a class="service" href= "#service" >service</a></li>
+            <li><a class="skill" href="#skill">skill</a></li>
+            <li><a class="portfolio"  href="#portfolio">Portfolio</a></li>
+            <li><a class="testmonial"  href="#testmonial">testmonial</a></li>
+            <li><a class="contact"href="#contact">contact</a></li>
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+          </ul>
+        </nav>
+      </header>
+      <!-- ////section//// -->
+      <section class="section" id="home">
+        <div class="title-container "  >
+          <h6>hello, I'm</h6>
+          <h1>Faezeh Ejlali</h1>
+          <p id="text"><span class="auto-typed"></span></p>
+          <div class="buttons">
+         <button class="primary-button hire" id="hire" onclick="myFunction()"><div>hire me</div></button>
+          <form action="" class="hidden d-none" id="hidden" >
+        <div class="collector">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <select name="" >
+            <option value="">Front-End Developer</option>
+            <option value="">Web Developer</option>
+            <option value="">Designer</option>
+          </select>
+         <textarea name="contact-message" cols="30" rows="5" placeholder=" Your Message"></textarea>
+        </div>
+        <button class="send" id="send" onclick="send()">Send Request</button>
+             </form>
+          <button class="secondary-button"><div>download cv</div></button>
+          </div>
+          <!-- //icons// -->
+          <div class="icons">
+           <a target="_blank" href="https://instagram.com/faezeh__ejlali"><ion-icon name="logo-instagram"></ion-icon></a> 
+            <a target="_blank" href="https://github.com/faezehe21"><ion-icon name="logo-github"></ion-icon></a>
+            <a target="_blank" href="https://t.me/faezeh_ejali"><ion-icon name="paper-plane-outline"></ion-icon></a>
+            <a target="_blank" href="https://wa.me/989383887133"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          </div>    
+</div>
+          <!-- ///image-1/// -->
+        <div class="image-container">
+          <img src="./assets/hero-faezeh.jpg" alt="" />
+        </div>
+      </section>
+      <!-- ///widget// -->
+      <div class="widget">
+        <div class="widget-item">
+          <h2 >124</h2>
+          <p>Happy Clients</p>
+        </div>
+        <div class="widget-item">
+          <h2 id="counter">356</h2>
+          <p>Project Completed</p>
+        </div>
+        <div class="widget-item">
+          <h2>567</h2>
+          <p>Awards Won</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <main>
+      <!-- //section-2// -->
+      <section id="about" class="section-2 wow animate__animated animate__fadeInDown animate__delay-2s animate__repeat-	infinite ">
+        <div class="image-container2">
+          <img class="image2" src="./assets/faezeh.jpg" alt="" />
+        </div>
+        <div class="discription">
+          <h6>Faezeh Ejlali</h6>
+          <p class="subtitle">Front-End Developer & Web Developer </br> & Designer</p>
+          <p>
+            Hi! I'm Faezeh and i'm 22 years old. I'm recent graduate of Alzahra University. I'm looking for an opputunity to gain experience in front-end , for example
+            one that involves a lot of client work and project managment.</br>I have always had a passion for writing , teamworks , creativity & problem-solving. Also I'm passionate about everthing that goes into making websites work well and look beautiful. I'm organized and detail-oriented person,
+             which is why i think this job would be a good fit.
+          </p>
+          <p>
+           I love building websites that are easy to use and can be accessed by anyone.
+            I also love making my clients happy with their site's
+           performance, so they can see it on any device they have.
+          </p>
+          <button class="primary-button third-button
+          "><div>download cv</div></button>
+        </div>
+      </section>
+      <!-- ////section-3/// -->
+      <section class="section-3" id="service">
+        <div class="service  wow animate__animated animate__fadeIn animate__delay-4s animate__repeat-	infinite">
+          <h5>Service</h5>
+          <h6 class="subtitle-2">What I Do</h6>
+          <p>
+            You can see some of the services that i can do below , with numbers.</br>
+             e.g building the structure of websites , styles and ...
+          </p>
+          <div class="box-container">
+            <div class="div-1">
+            <ion-icon class="icon"  name="code-slash-outline"></ion-icon>
+              <h5>HTML</h5>
+            </div>
+            <div class="div-2">
+              <ion-icon class="icon"name="brush-outline"></ion-icon>
+              <h5>CSS</h5>
+            </div>
+            <div class="div-3">
+              <ion-icon class="icon" name="construct-outline"> </ion-icon> </ion-icon>
+              <h5>JS</h5>
+            </div>
+            <div class="div-4">
+              <ion-icon class="icon"name="cut-outline"> </ion-icon>
+              <h5>Design</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section-4// -->
+      <section class="section-4" id="skill">
+        <div class="skill">
+          <h5>Skills</h5>
+          <h6>Why Choose me</h6>
+          <p>
+            You can see some of the skills that i can do below , 
+            with numbers.</br> e.g building the structure of websites , styles and ...
+          </p>
+        </div>
+        <!-- ///progress/// -->
+        <div class="row text-left wow animate__animated animate__fadeInDown animate__delay-5s animate__repeat-	infinite ">
+          <div class="col-sm-6">
+            <h6 class="mb-3">HTML</h6>
+            <span>89%</span>
+            <div class="progress">
+              <div
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 89%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="mb-3">CSS</h6>
+            <span>80%</span>
+            <div class="progress">
+              <div
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="mb-3">Javascript</h6>
+            <span>55%</span>
+            <div class="progress">
+              <div
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 55%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="mb-3">Design</h6>
+            <span>50%</span>
+            <div class="progress">
+              <div
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- //section-5// -->
+    <section class="section-5" id="portfolio">
+      <div class="portfolio">
+        <h5>Portfolio</h5>
+        <h6>Check My Wonderful Works</h6>
+        <p>
+      You can see some of my mini-projects when I was learning front-end </br> and as my first tasks that i did.
+        </p>
+      </div>
+      <!-- //grid/// -->
+      <div class="pics wow animate__animated animate__fadeIn animate__delay-3s animate__repeat-	infinite">
+        <figure class="pic-1">
+          <img src="./assets/pic-1.avif" alt="" />
+          <figcaption>
+            <a href="#">
+              <h5>Term-Project</h5>
+            </a>
+            <a class="link" href="https://faezehe21.github.io"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="pic-2">
+          <img src="./assets/pic-2.avif" alt="" />
+          <figcaption>
+            <a href="#"><h5>First-Project</h5></a>
+            <a href="https://github.com/faezehe21/mid-term" class="link"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="pic-3">
+          <img src="./assets/pic-3.avif" alt="" />
+          <figcaption>
+            <a href=""><h5>Slider</h5></a>
+            <a href="https://github.com/faezehe21/Slider" class="link"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="pic-4">
+          <img src="./assets/pic-4.avif" alt="" />
+          <figcaption>
+            <a href=""><h5>SCSS</h5></a>
+            <a href="https://github.com/faezehe21/sass" class="link"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="pic-5">
+          <img src="./assets/pic-5.avif" alt="" />
+          <figcaption>
+            <a href=""><h5>Game</h5></a>
+            <a href="https://github.com/faezehe21/game" class="link"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+        <figure class="pic-6">
+          <img src="./assets/pic-6.avif" alt="" />
+          <figcaption>
+            <a href=""><h5>Mini-Project</h5></a>
+            <a href="https://github.com/faezehe21/project" class="link"
+              ><ion-icon name="link-outline"></ion-icon
+            ></a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <!-- //section-6// -->
+    <section class="section-6" id="testmonial">
+      <div class="testmonial">
+        <h5>Testmonial</h5>
+        <h6>What People Say About Me</h6>
+        <p>Thank you to everyone who gave their opinions and suggestions about me to improve my level</br>And also
+           their opinions and experiences about front-end</p>
+      </div>
+      <!-- slider/ -->
+ <div class="big ">
+  <button>
+    <span id="back-btn">Back</span>
+  </button>
+  <div class="review-box">
+    <ion-icon name="chatbubbles-outline"></ion-icon>
+    <p id="custumer-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum</br> voluptates in enim vel amet?</p>
+    <img src="./assets/2102647.png" alt=""
+    id="custumer-pic"
+    class="">
+    <h5 class="custumer-name" id="custumer-name"></h5>
+    <span id="custumer-job"></span>
+</div>
+<button>
+  <span id="next-btn">Next</span>
+ </button>
+ </div>
+    </section>
+    <!-- ///section7/// -->
+  <section class="section-7 wow animate__animated animate__fadeIn animate__delay-4s animate__repeat-infinite animate__slow	2s " id="contact">
+<div class="contact">
+  <h5 >Contact</h5>
+  <h6>Get In Touch With Me</h6>
+  <p>You can contact me in any of the following ways.</p>
+</div>
+<!-- ///form///// -->
+<section class="form" >
+  <!-- //first-part// -->
+   <div class="first-part">
+    <h6>Available 24/7</h6>
+    <h5>Get In Touch</h5>
+  <form action="" >
+<div class="collector">
+  <input  required type="email" placeholder="Enter your email">
+  <input required type="password" placeholder="Password">
+ <textarea  name="contact-message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+</div>
+<button class="send" onclick="message()">Send Message</button>
+     </form>
+   </div>
+<!-- //second-part// -->
+  <div class="second-part">
+    <!-- 1 -->
+    <div>
+   <article>
+    <ion-icon name="location-outline"></ion-icon>
+    <h5>Location</h5>
+   </article>
+      <p >Iran West Azarbaijan province Urmia</p>
+    </div>
+    <!-- 2 -->
+    <div>
+      <article>
+        <ion-icon name="call-outline"></ion-icon>
+      <h5>
+        Phone Number</h5>
+      </article>
+      <p>09383887133</p>
+    </div>
+    <!-- 3 -->
+    <div>
+    <article>
+      <ion-icon name="mail-outline"></ion-icon>
+      <h5>Email Address</h5>
+    </article>
+      <p>faezehejlali8@gmail.com</p>
+    </div>
+  </div>
+    </section>
+    </section>
+    </main>
+    <footer>
+      <div class="footer-item">
+        <div class="icons">
+          <a target="_blank" href="https://instagram.com/faezeh__ejlali"><ion-icon name="logo-instagram"></ion-icon></a> 
+           <a target="_blank" href="https://github.com/faezehe21"><ion-icon name="logo-github"></ion-icon></a>
+           <a target="_blank" href="https://t.me/faezeh_ejali"><ion-icon name="paper-plane-outline"></ion-icon></a>
+           <a target="_blank" href="https://wa.me/989383887133"><ion-icon name="logo-whatsapp"></ion-icon></a>
+         </div>
+         <p>Copyright 2045 ©<a href=""> DevCRUD</a></p>
+      </div>
+      <a href="#" class="to-top">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+      </a>
+    </footer>
+    <!-- -- //bootstrap// -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- //iconionic// -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- typing affect -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- animate -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+     <!-- ///js// -->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
