@@ -13,7 +13,7 @@ const typed = new Typed(".auto-typed", {
   loop: true,
 });
 
-const toTop = document.querySelector(".to-top");
+const toTop = document.querySelector(".to-top"); 
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 300) {
@@ -143,6 +143,7 @@ toggle.addEventListener("click", function () {
     header.style.transition = "1s";
   }
 });
+
 
 
 
