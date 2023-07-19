@@ -1633,6 +1633,9 @@ footer {
   .widget-item:last-child {
     padding-left: 16px !important;
   }
+  .header {
+    padding: 16px 32px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -1708,6 +1711,9 @@ footer {
   }
   .review-box > ion-icon {
     display: none;
+  }
+  .header {
+    padding: 16px 32px;
   }
 }
 
